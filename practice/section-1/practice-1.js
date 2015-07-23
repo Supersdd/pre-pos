@@ -6,9 +6,9 @@ function collect_same_elements(collection_a, collection_b) {
       result.push(item);
     }
   })
-
+ 
   return result;
-}
+} 
 
 var find_same_item = function(item_a,item_b) {
   for(var x = 0; x < item_b.length; x++) {
