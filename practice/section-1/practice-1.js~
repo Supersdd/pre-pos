@@ -1,0 +1,20 @@
+
+var FindSameSymbol = function(SymbalA,collection_b){
+  for(var x = 0;x<collection_b.length;x++){
+    if(SymbalA === collection_b[x]){
+      return collection_b[x];
+    }
+  }
+}
+function collect_same_elements(collection_a, collection_b) {
+  var result = [];
+  for(var i = 0;i<collection_a.length;i++){
+    var symbol = FindSameSymbol(collection_a[i],collection_b);
+    if(symbol){
+      result.push(symbol);
+    }
+  }
+ return result;
+}
+
+
